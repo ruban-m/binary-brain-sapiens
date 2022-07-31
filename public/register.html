@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registor | New user</title>
+    <script src="./script.register.js" defer></script>
+    <link rel="stylesheet" href="./style.registor.css" />
+  </head>
+  <body>
+    <div class="full-box">
+      <form action="#" class="box" autocomplete="off">
+        <label for="number">Phone</label>
+        <input type="text" name="number" class="input-box" maxlength="10" minlength="10" required />
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" class="input-box" minlength="8" required />
+        <label for="password">Confirm Password</label>
+        <input type="password" name="confirm_password" id="confirm_password" class="input-box" minlength="8" required onkeyup="check()" />
+        <span id="message"></span>
+        <input type="submit" value="Register" class="button" />
+      </form>
+      <img src="./undraw_add_file_re_s4qf.svg" alt="SVG" />
+    </div>
+  </body>
+</html>
