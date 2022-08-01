@@ -3,27 +3,26 @@ const app = express()
 const speakeasy = require('speakeasy')
 const qrcode = require('qrcode')
 
-// const path = require('path')
-
-// const cors = require('cors')
-// app.use(cors())
-
+app.use(express.json())
+app.use(express.urlencoded({ extended: true }))
 app.use(express.static('public'))
-// app.use('/register', express.static(path.join(__dirname, 'public')))
+app.use('/register', express.static('public'))
+app.use('/register/2fa', express.static('public'))
+
+app.set('view engine', 'ejs')
 
 const secret = speakeasy.generateSecret()
 
 app.get('/', (req, res) => {
-  res.sendFile('index')
+  res.status(200).render('index')
 })
 
 app.get('/register', (req, res) => {
-  res.sendFile('register.html')
+  res.status(200).render('register')
 })
 
 app.get('/register/2fa', (req, res) => {
-  // res.sendFile('2fa.html')
-  res.send('hi')
+  res.render('2fa')
 })
 
 app.get('/api', (req, res) => {
