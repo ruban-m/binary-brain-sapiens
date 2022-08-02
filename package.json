@@ -1,5 +1,5 @@
 {
-  "name": "project",
+  "name": "binary-brain-sapiens",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "dev": "nodemon index"
   },
   "keywords": [],
-  "author": "",
+  "author": "ruban",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.0.1",
