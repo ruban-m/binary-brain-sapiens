@@ -11,10 +11,13 @@
   <body>
     <div class="full-box">
       <div class="box">
-        <div class="speakeasy sub-box"></div>
+        <div class="speakeasy sub-box">
+          <img src="<%= obj.data %>" />
+          <p id="base32"><%= obj.base32 %></p>
+        </div>
         <form action="" class="sub-box" autocomplete="off">
           <button type="button" id="textCopy">Copy String</button>
-          <input type="text" maxlength="6" minlength="6" required name="code" class="input-box" id="" />
+          <input type="text" maxlength="6" minlength="6" required name="code" class="input-box" placeholder="Enter The TOTP" />
           <input type="submit" value="Verify" class="button" />
         </form>
         <div class="g-auth">

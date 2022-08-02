@@ -10,7 +10,9 @@
   </head>
   <body>
     <div class="full-box">
-      <form action="#" class="box" autocomplete="off">
+      <form action="/register/2fa" method="post" class="box" autocomplete="off">
+        <label for="number">Name</label>
+        <input type="text" name="name" class="input-box" required />
         <label for="number">Phone</label>
         <input type="text" name="number" class="input-box" maxlength="10" minlength="10" required />
         <label for="password">Password</label>
