@@ -15,14 +15,14 @@
           <img src="<%= obj.data %>" />
           <p id="base32"><%= obj.base32 %></p>
         </div>
-        <form action="" class="sub-box" autocomplete="off">
+        <form action="/register/2fa/2faverify" method="post" class="sub-box" autocomplete="off">
           <button type="button" id="textCopy">Copy String</button>
-          <input type="text" maxlength="6" minlength="6" required name="code" class="input-box" placeholder="Enter The TOTP" />
+          <input type="text" maxlength="6" minlength="6" required name="verification_code" class="input-box" placeholder="Enter The TOTP" />
           <input type="submit" value="Verify" class="button" />
         </form>
         <div class="g-auth">
           <img id="gauth" src="assets/gauth.jpg" alt="jpg" />
-          <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2">Download Google Authenticator</a>
+          <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2" target="_blank" rel="noopener noreferrer">Download Google Authenticator</a>
         </div>
       </div>
       <img id="gif" src="assets/Google Authenticator first time set up.gif" alt="gif" />

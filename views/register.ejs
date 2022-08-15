@@ -11,13 +11,13 @@
   <body>
     <div class="full-box">
       <form action="/register/2fa" method="post" class="box" autocomplete="off">
-        <label for="number">Name</label>
+        <label for="name">Name</label>
         <input type="text" name="name" class="input-box" required />
-        <label for="number">Phone</label>
-        <input type="text" name="number" class="input-box" maxlength="10" minlength="10" required />
+        <label for="phone">Phone</label>
+        <input type="text" name="phone" class="input-box" maxlength="10" minlength="10" required />
         <label for="password">Password</label>
         <input type="password" name="password" id="password" class="input-box" minlength="8" required />
-        <label for="password">Confirm Password</label>
+        <label for="confirm_password">Confirm Password</label>
         <input type="password" name="confirm_password" id="confirm_password" class="input-box" minlength="8" required onkeyup="check()" />
         <span id="message"></span>
         <input type="submit" value="Register" class="button" />
